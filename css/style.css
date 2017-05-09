@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: 'Varela Round', sans-serif;
+	font-family:  'Varela Round', Helvetica, Arial, sans-serif;
 	line-height: 1.6;
 	background: #000;
 	margin: 0 auto;
@@ -109,6 +109,10 @@ h2 {
 	padding-top: 3em;
 } 
 
+/* ================================= 
+  Skills Section Style
+==================================== */
+
 .skills-container {
 	background: #00ace6;
 	margin: 0 auto;
@@ -140,6 +144,10 @@ h2 {
 	margin: 0 auto;
 }
 
+/* ================================= 
+  Contact Section Style
+==================================== */
+
 #contact-paragraph {
   display: block;
   width: 80%;
@@ -157,7 +165,9 @@ h2 {
 	padding-bottom: 30px;
 }
 
-/* -----Base Navigation Layuot-----*/
+/* ================================= 
+  Basic Nvigation Style
+==================================== */
 
 .main-header,
 .main-nav {
@@ -176,6 +186,8 @@ h2 {
 	font-family: 'Anton', sans-serif;
 	font-size: 2em;
 	font-weight: 500;
+	padding-top: 0; 
+	margin: 0;
 }
 
 
@@ -204,10 +216,7 @@ h2 {
 .footer {
 	padding-top: 30px;
   background: #00ace6;
-/*
-  padding-top: 2em;
-  padding-bottom: 50px;
-*/
+	
 }
 
 .footer-nav {
@@ -215,7 +224,8 @@ h2 {
 	border-top: 1px solid #fff;
 	margin-right: 23px;
 	margin-left: 23px;
-	font-size: 1.5em;	
+	font-size: 1.5em;
+	padding-bottom: 50px;	
 }
 .footer-nav a:hover {
 	color: #B7FACE;
@@ -223,10 +233,15 @@ h2 {
 
 .mobile-nav {
 	display: inline-block;
-	float: right;
+	float: left;
 	font-size: .75em;
-	margin-bottom: 70px;
+	background: transparent;
+	margin-bottom: 4px;
+	position: fixed;
+	bottom: 50px;
+	right: 3%;
 }
+
 
 .name2 {
 	display: inline-block;
@@ -247,7 +262,9 @@ h2 {
   clear: both;
 }
 
-/* ---- Responsive Layout ---- */
+/* ================================= 
+  Responsive Layout
+==================================== */
 
 /* ================================= 
   Media Queries
@@ -255,13 +272,8 @@ h2 {
 
 @media (min-width: 768px){
 
-/*.main-header,*/
-#wrapper {
-  min-height: calc(100vh-334px);
-}
 
 .intro-paragraph {
-	margin: 0 auto;
 	width: 40%;
 	padding-bottom: 30px;
   padding-top: 0;
@@ -271,7 +283,6 @@ h2 {
 
 #wrapper {
   max-width: 800px;
-  padding-top: 70px;
   width: 95%;
 }
 
@@ -303,7 +314,7 @@ h2 {
 #contact-paragraph {
 	width: 60%;
 }
-.name,
+
 .main-header {
 		height: 100px;
 		justify-content: flex-end;	
@@ -312,6 +323,7 @@ h2 {
 
 
 .name {
+		height: 100px;
 		padding-top: 200px;
 		justify-content: flex-end;
 		flex-direction: row;
@@ -321,7 +333,7 @@ h2 {
 .main-nav {
 		flex-direction: row;
 		justify-content: space-around;
-		margin-top: 30px;
+		margin-top: 50px;
 	}
 	
 
@@ -372,21 +384,16 @@ h2 {
   padding-right: 10px;
 }
 
-.main-header,
-.main-nav {
-	flex-direction: row;align-items:
-}
-/*
 .main-header {
-	height: 50px;
+	flex-direction: row;
 }
-*/
+
 
 .name {
 	padding-top: 15px;
 	display: block;
 	margin-right: auto;
-	margin-top: 40px;
+	margin-top: 0;
 	padding-left: 100px;
 }
 
